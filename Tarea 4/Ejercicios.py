@@ -26,6 +26,14 @@ print('Letras: %i' % resultado[0])
 print('Números: %i' % resultado[1])
 print('Caracteres: %i' % resultado[2])
 
+#EJEMPLO DE PRUEBA: EJERCICIO 1
+#Ejemplo_1: @v3na
+#Ejemplo_2: N0sotr0s
+#Ejemplo_3: !!!!Pasaporte!!!!"_@_@"
+#Ejemplo_4: BANC0_D3_D@T05
+
+#---------------------------------------------------------------------------------------
+
 # Ejercicio 2: 
 #Función que cuenta todas las letras repetidas en una palabra que se introduce por teclado.
 
@@ -44,6 +52,12 @@ for letra in palabra: # ciclo for para validar la cantidad de letras que aparece
 
 print("%sResultado: %s" % (letra, diccionario)) # Imprime en pantalla la letra y cuántas veces se repite
 
+#EJEMPLO DE PRUEBA: EJERCICIO 2
+#Ejemplo_1: Amigos
+#Ejemplo_2: L3t5_do_IT
+#Ejemplo_3: Estamos bien
+#Ejemplo_4: Categoría21aa
+
 # Ejercicio 3: 
 #Función que elimina todas las apariciones de un elemento en una lista
 
@@ -55,8 +69,7 @@ print("%sResultado: %s" % (letra, diccionario)) # Imprime en pantalla la letra y
 
 def lista_tupla(entrada):
 
-    lista, tupla = (input("Ejercicio 4: Escriba una lista de números, separados por coma :"))
-
+    lista, tupla = input(int("Ejercicio 4: Escriba una lista de números, separados por coma :"))
     lista = entrada.split(',')  # Los números son dados separados por coma.
     # Convertir los valores a enteros.
     for i in range(len(lista)):
@@ -64,4 +77,6 @@ def lista_tupla(entrada):
     tupla = tuple(lista)
     return lista, tupla
 
-print("Lista: {}\n Tupla: {}")
+print("Lista: {lista}\n Tupla: {tupla}")
+
+#print
