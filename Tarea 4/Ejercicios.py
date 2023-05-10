@@ -18,7 +18,7 @@ def caracteres_contador(cadena):
     
     return letras, numeros, caracteres 
 
-texto = input('Digite una palabra ')           
+texto = input('Ejercicio 1: Digite una palabra ')           
 resultado = caracteres_contador(texto)
 
 #Imprime en pantalla el contador de cada uno de los elementos que conforman el texto introducido por el usuario
@@ -33,7 +33,7 @@ def contador_repetidas(letra):
 # El usuario introduce la palabra que se validará en el programa
     palabra = 0
 
-palabra  = input(str("Escribe una palabra:  "))
+palabra  = input(str("Ejercicio 2: Escriba una palabra:  "))
 diccionario = { } # se crea una lista que permanecerá en blanco y se llamará diccionario
 
 for letra in palabra: # ciclo for para validar la cantidad de letras que aparecen repetidas en la palabra
@@ -49,22 +49,19 @@ print("%sResultado: %s" % (letra, diccionario)) # Imprime en pantalla la letra y
 
 
 
+
 # Ejercicio 4: 
-#Función que recibe una secuencia de números e imprime una lista y una tupla con dichos valores
-
-# Ejercicio 6: Obtener un conjunto de números separados por coma y crear una lista.
-
-# 2, 8, 9, 0, 1, 8
+#Función que recibe una secuencia de números e imprime una lista y una tupla con valores definidos por el usuario
 
 def lista_tupla(entrada):
-    entrada = 0
 
-entrada = input('Escriba varios números separados por coma: ')
+    lista, tupla = (input("Ejercicio 4: Escriba una lista de números, separados por coma :"))
 
-print(entrada)
-print(type(entrada))
+    lista = entrada.split(',')  # Los números son dados separados por coma.
+    # Convertir los valores a enteros.
+    for i in range(len(lista)):
+        lista[i] = int(lista[i])
+    tupla = tuple(lista)
+    return lista, tupla
 
-lista = entrada.split(',')
-
-print(type(numeros))
-print(numeros)
+print("Lista: {}\n Tupla: {}")
