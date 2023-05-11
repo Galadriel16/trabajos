@@ -82,3 +82,9 @@ def lista_tupla(entrada):
 
 print("Lista: {}\n Tupla: {}\n")
 print ('---------------------------------------------------------------------------------------')
+
+#EJEMPLO DE PRUEBA: EJERCICIO 4
+#Ejemplo_1: 1,2,3,4,5,6,5,2
+#Ejemplo_2: 4,5,5,5,5,6,2,1,3,5
+#Ejemplo_3: 1,5,7,3
+#Ejemplo_4: 2,2,2,2,2,2,2,2
