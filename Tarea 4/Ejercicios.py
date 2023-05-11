@@ -64,12 +64,7 @@ print ('------------------------------------------------------------------------
 # Ejercicio 3: 
 #Función que elimina todas las apariciones de un elemento en una lista
 
-def remover_elemento(lista, elemnto):
-    lista2 = lista.copy()  # Decidí trabajar una copia de la lista para imprimir la orginal y la copia al final.
-    # Se elimina el elemento las veces necesarias hasta que desaparezca.
-    while elemento in lista2:
-        lista2.remove(elemento)
-    return lista2
+
 
 #---------------------------------------------------------------------------------------
 # Ejercicio 4: 
