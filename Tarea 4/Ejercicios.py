@@ -64,7 +64,12 @@ print ('------------------------------------------------------------------------
 # Ejercicio 3: 
 #Función que elimina todas las apariciones de un elemento en una lista
 
-
+def remover_elemento(lista, elemnto):
+    lista2 = lista.copy()  # Decidí trabajar una copia de la lista para imprimir la orginal y la copia al final.
+    # Se elimina el elemento las veces necesarias hasta que desaparezca.
+    while elemento in lista2:
+        lista2.remove(elemento)
+    return lista2
 
 #---------------------------------------------------------------------------------------
 # Ejercicio 4: 
@@ -72,15 +77,20 @@ print ('------------------------------------------------------------------------
 
 def lista_tupla(entrada):
 
-    lista, tupla = input(int("Ejercicio 4: Escriba una lista de números, separados por coma :"))
     lista = entrada.split(',')  # Los números son dados separados por coma.
-    # Convertir los valores a enteros.
+   
+    # Convierte los valores a enteros.
     for i in range(len(lista)):
         lista[i] = int(lista[i])
-    tupla = tuple(lista)
-    return lista, tupla
+      #  tupla = tuple(lista)
+    return lista #tupla
 
-print("Lista: {}\n Tupla: {}\n")
+lista = input("Ejercicio 4: Escriba una lista de números, separados por coma :")
+#tupla = {''}
+resultado = lista_tupla(lista) 
+#resultado = lista_tupla(tupla) 
+print ("Lista: ", [lista])
+#print ("Tupla: ", {tupla})
 print ('---------------------------------------------------------------------------------------')
 
 #EJEMPLO DE PRUEBA: EJERCICIO 4
