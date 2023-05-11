@@ -25,6 +25,7 @@ resultado = caracteres_contador(texto)
 print('Letras: %i' % resultado[0])
 print('Números: %i' % resultado[1])
 print('Caracteres: %i' % resultado[2])
+print ('---------------------------------------------------------------------------------------')
 
 #EJEMPLO DE PRUEBA: EJERCICIO 1
 #Ejemplo_1: @v3na
@@ -51,6 +52,7 @@ for letra in palabra: # ciclo for para validar la cantidad de letras que aparece
         diccionario[letra] = 1 # si la letra no se repite, se le asignará un valor de 1
 
 print("%sResultado: %s" % (letra, diccionario)) # Imprime en pantalla la letra y cuántas veces se repite
+print ('---------------------------------------------------------------------------------------')
 
 #EJEMPLO DE PRUEBA: EJERCICIO 2
 #Ejemplo_1: Amigos
@@ -58,12 +60,18 @@ print("%sResultado: %s" % (letra, diccionario)) # Imprime en pantalla la letra y
 #Ejemplo_3: Estamos bien
 #Ejemplo_4: Categoría21aa
 
+#---------------------------------------------------------------------------------------
 # Ejercicio 3: 
 #Función que elimina todas las apariciones de un elemento en una lista
 
+def remover_elemento(lista, elemnto):
+    lista2 = lista.copy()  # Decidí trabajar una copia de la lista para imprimir la orginal y la copia al final.
+    # Se elimina el elemento las veces necesarias hasta que desaparezca.
+    while elemento in lista2:
+        lista2.remove(elemento)
+    return lista2
 
-
-
+#---------------------------------------------------------------------------------------
 # Ejercicio 4: 
 #Función que recibe una secuencia de números e imprime una lista y una tupla con valores definidos por el usuario
 
@@ -77,6 +85,5 @@ def lista_tupla(entrada):
     tupla = tuple(lista)
     return lista, tupla
 
-print("Lista: {lista}\n Tupla: {tupla}")
-
-#print
+print("Lista: {}\n Tupla: {}\n")
+print ('---------------------------------------------------------------------------------------')
