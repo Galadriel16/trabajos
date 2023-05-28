@@ -12,9 +12,9 @@ def toma_usuario():
 
 # archivo que agregar el estado si ganó o perdió el jugador 
 
-def agrega_estadist(username, result):
-    filename = username.replace(' ', '').lower()
+def agrega_estadist(usuario, resulta):
+    filename = usuario.replace(' ', '').lower()
     # escribe un nuevo archivo
     archivo = open(f'{filename}-estadísticas.txt', 'a')
-    archivo.write(f'{username} {result}\n')
+    archivo.write(f'{usuario} {resulta}\n')
     archivo.close()

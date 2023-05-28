@@ -1,4 +1,3 @@
-import usuarios
 import estadisticas
 
 # función que crea un nuevo usuario
@@ -19,7 +18,6 @@ def crear_usuario():
     return nuevo_usuario
 
 # función que selecciona un usuario ya creado desde el archivo usuarios.txt
-
 def seleccion_usuario():
     todos = estadisticas.toma_usuario()
     if len(todos) == 0:
