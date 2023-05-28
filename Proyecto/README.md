@@ -1,6 +1,6 @@
 <h1>Proyecto: BlackJack</h1>
-<h2>Instrucciones:<h2>
-Para iniciar con el juego Black Jack, es necesario ejecutar el archivo "Principal.py", el cual mostrará un menú con las siguientes opciones:
+<h2>Instrucciones:</h2>
+<h5>Para iniciar con el juego Black Jack, es necesario ejecutar el archivo "Principal.py", el cual mostrará un menú con las siguientes opciones: </h5>
 
   B L A C K  J A C K
   -------------------
