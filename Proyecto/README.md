@@ -1,1 +1,1 @@
-<h1>Curso Básico Python</h1>
+<h1>Proyecto: BlackJack</h1>
