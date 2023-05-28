@@ -15,6 +15,8 @@
   
   La opción 3, cargará en un archivo *.txt el estado de los usuarios y por ende saldrá del juego de forma automática. En el archivo *.txt creado con el nombre de cada jugador, presentará las estadísticas del juego y cuántas veces ha ganado en el mismo, reportando en la última línea el estado de la partida jugada recientemente.
   
+  A continuación, un ejemplo para visualizar el resultado del juego:
+  
  ¡A divertirse! :D </h6>
   
   
